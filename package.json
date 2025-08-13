@@ -1,0 +1,43 @@
+{
+  "name": "laxmi-textile-website",
+  "version": "1.0.0",
+  "description": "Laxmi Textile Engineering Works - Professional Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "prod": "NODE_ENV=production node server.js",
+    "deploy": "bash deploy.sh",
+    "pm2:start": "pm2 start ecosystem.config.js --env production",
+    "pm2:stop": "pm2 stop laxmi-textile-website",
+    "pm2:restart": "pm2 restart laxmi-textile-website",
+    "pm2:status": "pm2 status",
+    "pm2:logs": "pm2 logs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "textile",
+    "engineering",
+    "machinery",
+    "website",
+    "nodejs",
+    "express"
+  ],
+  "author": "Laxmi Textile Engineering Works",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "path": "^0.12.7",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "compression": "^1.7.4",
+    "bcrypt": "^5.1.1",
+    "pm2": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 

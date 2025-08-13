@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Laxmi Textile Engineering Works</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h2>Laxmi Textile</h2>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="/products" class="nav-link active">
+                            Products Range
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#printing">Offset Printing Machines & Spares</a></li>
+                            <li><a href="#textile">Textile Machinery & Spares</a></li>
+                            <li><a href="#invisible_grills">Invisible Grills & Components</a></li>
+                            <li><a href="#components">Sheet Metal & Components</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/#about" class="nav-link">About Us</a></li>
+                    <li><a href="/#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn-secondary" onclick="openEnquiryModal()">Get Quote</button>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Hero Section -->
+    <section class="products-hero">
+        <div class="container">
+            <div class="products-hero-content">
+                <h1>Our Products Range</h1>
+                <p>Comprehensive textile engineering solutions for every manufacturing need</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Categories</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">47</span>
+                        <span class="stat-label">Products</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Navigation -->
+    <section class="category-nav">
+        <div class="container">
+            <div class="category-tabs" id="categoryTabs">
+                <!-- Categories will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-content">
+                <!-- Category content will be loaded here -->
+                <div id="productsContent" class="products-grid">
+                    <!-- Products will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="product-modal">
+        <div class="modal-overlay">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modalTitle">Product Details</h2>
+                    <button class="modal-close" id="modalClose">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="product-detail-content">
+                        <div class="product-image">
+                            <img id="modalImage" src="" alt="Product Image">
+                        </div>
+                        <div class="product-info">
+                            <h3 id="modalProductName"></h3>
+                            <p id="modalDescription"></p>
+                            <div class="product-features">
+                                <h4>Key Features:</h4>
+                                <ul id="modalFeatures"></ul>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-primary" id="inquireBtn">
+                                    <i class="fas fa-envelope"></i>
+                                    Request Quote
+                                </button>
+                                <button class="btn-secondary" id="contactBtn">
+                                    <i class="fas fa-phone"></i>
+                                    Contact Sales
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enquiry Modal -->
+    <div id="enquiryModal" class="enquiry-modal">
+        <div class="modal-overlay">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Get Quote & Enquiry</h3>
+                    <button class="modal-close" onclick="closeEnquiryModal()">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form id="enquiryForm" action="https://formspree.io/f/xwpqydaz" method="POST">
+                        <div class="form-section">
+                            <h4>Contact Information</h4>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="customerName">Full Name *</label>
+                                    <input type="text" id="customerName" name="customerName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="customerPhone">Phone Number *</label>
+                                    <input type="tel" id="customerPhone" name="customerPhone" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="customerEmail">Email Address</label>
+                                    <input type="email" id="customerEmail" name="customerEmail">
+                                </div>
+                                <div class="form-group">
+                                    <label for="customerCompany">Company Name</label>
+                                    <input type="text" id="customerCompany" name="customerCompany">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h4>Product Enquiry</h4>
+                            <div id="productEnquiryList">
+                                <!-- Product enquiry items will be added here -->
+                            </div>
+                            <button type="button" class="btn-add-product" onclick="addProductEnquiry()">
+                                <i class="fas fa-plus"></i> Add Another Product
+                            </button>
+                        </div>
+
+                        <div class="form-section">
+                            <h4>Additional Information</h4>
+                            <div class="form-group">
+                                <label for="enquiryMessage">Message (Optional)</label>
+                                <textarea id="enquiryMessage" name="enquiryMessage" rows="4" placeholder="Any specific requirements or questions..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary">
+                                <i class="fas fa-paper-plane"></i> Submit Enquiry
+                            </button>
+                            <button type="button" class="btn-secondary" onclick="closeEnquiryModal()">
+                                Cancel
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Selection Modal -->
+    <div id="productSelectionModal" class="product-selection-modal">
+        <div class="modal-overlay">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Select Product</h3>
+                    <button class="modal-close" onclick="closeProductSelectionModal()">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="search-box">
+                        <input type="text" id="productSearch" placeholder="Search products..." onkeyup="filterProducts()">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="product-categories">
+                        <button class="category-btn active" data-category="all" onclick="filterByCategory('all')">All Products</button>
+                        <button class="category-btn" data-category="printing" onclick="filterByCategory('printing')">Printing</button>
+                        <button class="category-btn" data-category="textile" onclick="filterByCategory('textile')">Textile</button>
+                        <button class="category-btn" data-category="invisible_grills" onclick="filterByCategory('invisible_grills')">Invisible Grills</button>
+                        <button class="category-btn" data-category="components" onclick="filterByCategory('components')">Components</button>
+                    </div>
+                    <div class="products-list" id="productsList">
+                        <!-- Products will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Laxmi Textile Engineering Works</h3>
+                    <p>Where Quality meets loyalty. Leading the textile industry with innovative engineering solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/products">Products</a></li>
+                        <li><a href="/#about">About Us</a></li>
+                        <li><a href="/#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#printing">Offset Printing Machines & Spares</a></li>
+                        <li><a href="#textile">Textile Machinery & Spares</a></li>
+                        <li><a href="#invisible_grills">Invisible Grills & Components</a></li>
+                        <li><a href="#components">Sheet Metal & Components</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> B3 Near siddhivinayak hospital, Navghar Road, Mumbai-Mharastra </p>
+                    <p><i class="fas fa-phone"></i> +91 98337 82555 / +91 98331 27327</p>
+                    <p><i class="fas fa-envelope"></i> laxmitextil@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Laxmi Textile Engineering Works. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="products.js"></script>
+</body>
+</html> 

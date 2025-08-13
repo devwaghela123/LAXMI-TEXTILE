@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laxmi Textile Engineering Works - Where Quality Meets Loyalty</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h2>Laxmi Textile</h2>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="/products" class="nav-link">
+                            Products Range
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/products#printing">Offset Printing Machines & Spares</a></li>
+                            <li><a href="/products#textile">Textile Machinery & Spares</a></li>
+                            <li><a href="/products#invisible_grills">Invisible Grills & Components</a></li>
+                            <li><a href="/products#components">Sheet Metal & Components</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn-secondary" onclick="openEnquiryModal()">Get Quote</button>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="/images/sulzer g6300.webp" alt="Sulzer G6300 Textile Machinery" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="image-placeholder">
+                    <i class="fas fa-industry"></i>
+                    <h3>Laxmi Textile Engineering Works</h3>
+                    <p>Where Quality meets loyalty</p>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="welcome-section">
+                    
+                    <h1 class="company-name">Laxmi Textile Engineering Works</h1>
+                    <p class="tagline">Where Quality meets loyalty</p>
+                    <div class="hero-features">
+                        <div class="feature">
+                            <i class="fas fa-cog"></i>
+                            <span>Advanced Machinery</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Quality Assurance</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 Support</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-section">
+                    <h3 class="meet-title">Meet Our Team:</h3>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-info">
+                                <h4>Vipul Waghela</h4>
+                                <p>Ltew</p>
+                                <div class="contact-details">
+                                    <span><i class="fas fa-phone"></i> +91 98337 82555</span>
+                                    <span><i class="fas fa-envelope"></i>vipulwaghela@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="contact-actions">
+                                <button class="contact-btn" onclick="window.location.href='tel:+919833782555'">
+                                    <i class="fas fa-phone"></i>
+                                    Call
+                                </button>
+                                <button class="contact-btn whatsapp-btn" onclick="window.open('https://wa.me/919833782555?text=Hello%20from%20Laxmi%20Textile%20website!%20I%20would%20like%20to%20inquire%20about%20your%20products.', '_blank')">
+                                    <i class="fab fa-whatsapp"></i>
+                                    WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-info">
+                                <h4>Ashish Waghela</h4>
+                                <p>Ltew</p>
+                                <div class="contact-details">
+                                    <span><i class="fas fa-phone"></i> +91 98331 27327</span>
+                                    <span><i class="fas fa-envelope"></i> aash22514@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="contact-actions">
+                                <button class="contact-btn" onclick="window.location.href='tel:+919833127327'">
+                                    <i class="fas fa-phone"></i>
+                                    Call
+                                </button>
+                                <button class="contact-btn whatsapp-btn" onclick="window.open('https://wa.me/919833127327?text=Hello%20from%20Laxmi%20Textile%20website!%20I%20would%20like%20to%20inquire%20about%20your%20products.', '_blank')">
+                                    <i class="fab fa-whatsapp"></i>
+                                    WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Laxmi Textile Engineering Works</h2>
+                <p>Leading the textile industry and invisible grille with innovated & engineered parts</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Story</h3>
+                    <p>Founded with a vision to revolutionize the textile industry, Laxmi Textile Engineering Works has been at the forefront of innovation for over two decades. We specialize in providing cutting-edge machinery and engineering solutions that enhance productivity and quality in textile manufacturing.</p>
+                    
+                    <h3>Our Mission</h3>
+                    <p>To deliver world-class textile engineering solutions that empower our clients to achieve excellence in their manufacturing processes while maintaining the highest standards of quality and reliability.</p>
+                    
+                    <div class="stats">
+                        <div class="stat">
+                            <h4>20+</h4>
+                            <p>Years of Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h4>100+</h4>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h4>284+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-building"></i>
+                        <h3>Our Facility</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Products Range</h2>
+                <p>Comprehensive solutions for printing, textile machinery, invisible grills, and components</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-category">
+                    <div class="category-icon">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3>Offset Printing Machines & Spares</h3>
+                    <p>Complete printing solutions and spare parts</p>
+                    <div class="product-image">
+                        <img src="/images/Heidelberg Gto 52 Offset Printing Machine Heidelberg Gto 52 Offset Printing Machine.webp" alt="Heidelberg GTO 52 Offset Printing Machine" onerror="this.style.display='none';">
+                    </div>
+                    <ul>
+                        <li>Komari Offset Printing Paper Separator</li>
+                        <li>Ryobi Offset Printing Machines</li>
+                        <li>HMT Offset Machine</li>
+                        <li>Heidelberg GTO 52</li>
+                    </ul>
+                    <a href="/products" class="btn-primary" style="margin-top: 1rem; text-decoration: none; display: inline-block;">View All Products</a>
+                </div>
+                
+                <div class="product-category">
+                    <div class="category-icon">
+                        <i class="fas fa-spinner"></i>
+                    </div>
+                    <h3>Textile Machinery & Spares</h3>
+                    <p>Comprehensive textile machinery solutions and spare parts</p>
+                    <div class="product-image">
+                        <img src="/images/somet rapier loom.webp" alt="Somet Rapier Loom" onerror="this.style.display='none';">
+                    </div>
+                    <ul>
+                        <li>Sulzer G 6300 Spare Parts</li>
+                        <li>Somet Machine Spare Parts</li>
+                        <li>Staubli Jacquard M4 Module</li>
+                        <li>Toyota Air-Jet Spares</li>
+                    </ul>
+                    <a href="/products" class="btn-primary" style="margin-top: 1rem; text-decoration: none; display: inline-block;">View All Products</a>
+                </div>
+                
+                <div class="product-category">
+                    <div class="category-icon">
+                        <i class="fas fa-th-large"></i>
+                    </div>
+                    <h3>Invisible Grills & Components</h3>
+                    <p>Complete invisible grill solutions and components</p>
+                    <div class="product-image">
+                        <img src="/images/invisible window grille raw material.webp" alt="Invisible Window Grill Raw Material" onerror="this.style.display='none';">
+                    </div>
+                    <ul>
+                        <li>SS 304 Torx Head Screws</li>
+                        <li>2.50 mm Cross Clips & Stiffener</li>
+                        <li>Nylon-Coated Wire Rope</li>
+                        <li>Invisible Window Grill Raw Material</li>
+                    </ul>
+                    <a href="/products" class="btn-primary" style="margin-top: 1rem; text-decoration: none; display: inline-block;">View All Products</a>
+                </div>
+                
+                <div class="product-category">
+                    <div class="category-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Sheet Metal & Components</h3>
+                    <p>Precision sheet metal components and accessories</p>
+                    <div class="product-image">
+                        <img src="/images/Sheet Metal Pressed Die Sheet Metal Pressed Die.webp" alt="Sheet Metal Pressed Die" onerror="this.style.display='none';">
+                    </div>
+                    <ul>
+                        <li>Sheet Metal Pressed Die</li>
+                        <li>MS CSK Head Bolts</li>
+                        <li>Stainless Steel Shim Washer</li>
+                        <li>Heald Frame Accessories</li>
+                    </ul>
+                    <a href="/products" class="btn-primary" style="margin-top: 1rem; text-decoration: none; display: inline-block;">View All Products</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to transform your textile manufacturing? Contact us today.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>B3 Near siddhivinayak hospital, Navghar Road, Mumbai-Mharastra, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 98337 82555 / +91 98331 27327</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>laxmitextil@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Monday-Saturday: 11:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Product Category</option>
+                                <option value="spinning">Spinning Machinery</option>
+                                <option value="weaving">Weaving Equipment</option>
+                                <option value="finishing">Finishing Solutions</option>
+                                <option value="automation">Automation Systems</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Laxmi Textile Engineering Works</h3>
+                    <p>Where Quality meets loyalty. Leading the textile industry with innovative engineering solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="/products#printing">Offset Printing Machines & Spares</a></li>
+                        <li><a href="/products#textile">Textile Machinery & Spares</a></li>
+                        <li><a href="/products#invisible_grills">Invisible Grills & Components</a></li>
+                        <li><a href="/products#components">Sheet Metal & Components</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> B3 Near siddhivinayak hospital, Navghar Road, Mumbai-Mharastra </p>
+                    <p><i class="fas fa-phone"></i> 91 98337 82555 / 91 98331 27327</p>
+                    <p><i class="fas fa-envelope"></i> laxmitextil@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Laxmi Textile Engineering Works. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enquiry Modal -->
+    <div id="enquiryModal" class="enquiry-modal">
+        <div class="modal-overlay">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Get Quote & Enquiry</h3>
+                    <button class="modal-close" onclick="closeEnquiryModal()">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form id="enquiryForm" action="https://formspree.io/f/xwpqydaz" method="POST">
+                        <div class="form-section">
+                            <h4>Contact Information</h4>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="customerName">Full Name *</label>
+                                    <input type="text" id="customerName" name="customerName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="customerPhone">Phone Number *</label>
+                                    <input type="tel" id="customerPhone" name="customerPhone" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="customerEmail">Email Address</label>
+                                    <input type="email" id="customerEmail" name="customerEmail">
+                                </div>
+                                <div class="form-group">
+                                    <label for="customerCompany">Company Name</label>
+                                    <input type="text" id="customerCompany" name="customerCompany">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h4>Product Enquiry</h4>
+                            <div id="productEnquiryList">
+                                <!-- Product enquiry items will be added here -->
+                            </div>
+                            <button type="button" class="btn-add-product" onclick="addProductEnquiry()">
+                                <i class="fas fa-plus"></i> Add Another Product
+                            </button>
+                        </div>
+
+                        <div class="form-section">
+                            <h4>Additional Information</h4>
+                            <div class="form-group">
+                                <label for="enquiryMessage">Message (Optional)</label>
+                                <textarea id="enquiryMessage" name="enquiryMessage" rows="4" placeholder="Any specific requirements or questions..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary">
+                                <i class="fas fa-paper-plane"></i> Submit Enquiry
+                            </button>
+                            <button type="button" class="btn-secondary" onclick="closeEnquiryModal()">
+                                Cancel
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Selection Modal -->
+    <div id="productSelectionModal" class="product-selection-modal">
+        <div class="modal-overlay">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Select Product</h3>
+                    <button class="modal-close" onclick="closeProductSelectionModal()">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="search-box">
+                        <input type="text" id="productSearch" placeholder="Search products..." onkeyup="filterProducts()">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="product-categories">
+                        <button class="category-btn active" data-category="all" onclick="filterByCategory('all')">All Products</button>
+                        <button class="category-btn" data-category="printing" onclick="filterByCategory('printing')">Printing</button>
+                        <button class="category-btn" data-category="textile" onclick="filterByCategory('textile')">Textile</button>
+                        <button class="category-btn" data-category="invisible_grills" onclick="filterByCategory('invisible_grills')">Invisible Grills</button>
+                        <button class="category-btn" data-category="components" onclick="filterByCategory('components')">Components</button>
+                    </div>
+                    <div class="products-list" id="productsList">
+                        <!-- Products will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
